@@ -1,7 +1,5 @@
-// this program demonstrates the communication from the control laptop
-// to the arduino and the control of the two servos in the supplied gimbal
-//
-// you need an USB cable to program the arduino
+//Main file for the Arduino Source Code of the Ampharris ROD.
+//Group: 183, Author: Koen Degeling.
 
 // pin number of on-board LED
 int ledPin = 13;
