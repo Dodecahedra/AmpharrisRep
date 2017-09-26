@@ -32,11 +32,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>Servo.h</name>
-			<type>1</type>
-			<location>C:/Users/KoenD_000/eclipse/java-neon/eclipse/arduinoPlugin/libraries/Servo/src/Servo.h</location>
-		</link>
-		<link>
 			<name>core/core</name>
 			<type>2</type>
 			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.20/cores/arduino</locationURI>
@@ -45,6 +40,31 @@
 			<name>core/variant</name>
 			<type>2</type>
 			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.20/variants/yun</locationURI>
+		</link>
+		<link>
+			<name>libraries/EEPROM</name>
+			<type>2</type>
+			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.20/libraries/EEPROM</locationURI>
+		</link>
+		<link>
+			<name>libraries/HID</name>
+			<type>2</type>
+			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.20/libraries/HID</locationURI>
+		</link>
+		<link>
+			<name>libraries/Servo</name>
+			<type>2</type>
+			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.20/libraries/Servo</locationURI>
+		</link>
+		<link>
+			<name>libraries/SoftwareSerial</name>
+			<type>2</type>
+			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.20/libraries/SoftwareSerial</locationURI>
+		</link>
+		<link>
+			<name>libraries/Wire</name>
+			<type>2</type>
+			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.20/libraries/Wire</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

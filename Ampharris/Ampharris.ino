@@ -1,6 +1,8 @@
 //Main file for the Arduino Source Code of the Ampharris ROD.
 //Group: 183, Author: Koen Degeling.
 
+//Include:
+#include <Servo.h>
 // pin number of on-board LED
 int ledPin = 13;
 
@@ -11,8 +13,6 @@ int PWM1 = 3;
 int PWM2 = 5;
 int PWM3 = 6;
 int PWM4 = 11;
-
-#include <Servo.h>  // standard servo library
 
 //Servo objects with their own function for control
 Servo servoX;

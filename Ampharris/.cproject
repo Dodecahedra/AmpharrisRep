@@ -12,29 +12,59 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildProperties="" id="io.sloeber.core.toolChain.release.1789159611" name="Release" parent="org.eclipse.cdt.build.core.emptycfg">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="io.sloeber.core.toolChain.release.1789159611" name="Release" parent="org.eclipse.cdt.build.core.emptycfg">
 					<folderInfo id="io.sloeber.core.toolChain.release.1789159611.1577220010" name="/" resourcePath="">
 						<toolChain id="io.sloeber.core.toolChain.release.2010996073" name="Arduino Toolchain (Sloeber edition)" superClass="io.sloeber.core.toolChain.release">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="io.sloeber.targetplatform.334350215" name="Arduino Target" osList="all" superClass="io.sloeber.targetplatform"/>
-							<builder buildPath="${workspace_loc:/Ampharris}/Release" id="io.sloeber.sketch.builder.1991280163" managedBuildOn="true" name="Arduino sketch builder.Release" superClass="io.sloeber.sketch.builder"/>
+							<builder buildPath="${workspace_loc:/Ampharris}/Release" id="io.sloeber.sketch.builder.1991280163" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Arduino sketch builder" superClass="io.sloeber.sketch.builder"/>
 							<tool id="io.sloeber.tool.sketch.compiler.cpp.1420346170" name="Arduino C++ Compiler" superClass="io.sloeber.tool.sketch.compiler.cpp">
-								<option id="io.sloeber.compiler.cpp.sketch.option.incpath.1002845749" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" valueType="includePath">
+								<option id="io.sloeber.compiler.cpp.sketch.option.incpath.1002845749" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/EEPROM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/EEPROM/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/HID}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/HID/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SoftwareSerial}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SoftwareSerial/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Wire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Wire/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.cpp.sketch.input.288418797" name="CPP source files" superClass="io.sloeber.compiler.cpp.sketch.input"/>
 							</tool>
 							<tool id="io.sloeber.tool.compiler.c.262653631" name="Arduino C Compiler" superClass="io.sloeber.tool.compiler.c">
-								<option id="io.sloeber.compiler.c.sketch.option.incpath.1023841614" superClass="io.sloeber.compiler.c.sketch.option.incpath" valueType="includePath">
+								<option id="io.sloeber.compiler.c.sketch.option.incpath.1023841614" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/EEPROM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/EEPROM/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/HID}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/HID/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SoftwareSerial}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SoftwareSerial/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Wire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Wire/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.c.sketch.input.570126990" name="C Source Files" superClass="io.sloeber.compiler.c.sketch.input"/>
 							</tool>
 							<tool id="io.sloeber.tool.sketch.compiler.s.1504583820" name="Arduino Assembler" superClass="io.sloeber.tool.sketch.compiler.s">
-								<option id="io.sloeber.compiler.asm.sketch.option.incpath.67749392" superClass="io.sloeber.compiler.asm.sketch.option.incpath" valueType="includePath">
+								<option id="io.sloeber.compiler.asm.sketch.option.incpath.67749392" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/EEPROM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/EEPROM/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/HID}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/HID/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SoftwareSerial}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SoftwareSerial/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Wire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Wire/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.S.sketch.input.262667565" name="Assembly source files" superClass="io.sloeber.compiler.S.sketch.input"/>
 							</tool>
@@ -59,4 +89,5 @@
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
 </cproject>
