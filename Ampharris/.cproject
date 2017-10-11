@@ -31,6 +31,29 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Wire/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/CapacitiveSensor}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Ethernet}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Ethernet/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Firmata}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Firmata/utility}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/GSM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/GSM/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Keyboard}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Keyboard/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/LiquidCrystal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/LiquidCrystal/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Mouse}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Mouse/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SD}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SD/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SPI}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Stepper}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Stepper/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/TFT}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/TFT/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/WiFi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/WiFi/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.cpp.sketch.input.288418797" name="CPP source files" superClass="io.sloeber.compiler.cpp.sketch.input"/>
 							</tool>
@@ -48,6 +71,29 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Wire/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/CapacitiveSensor}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Ethernet}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Ethernet/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Firmata}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Firmata/utility}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/GSM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/GSM/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Keyboard}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Keyboard/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/LiquidCrystal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/LiquidCrystal/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Mouse}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Mouse/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SD}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SD/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SPI}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Stepper}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Stepper/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/TFT}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/TFT/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/WiFi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/WiFi/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.c.sketch.input.570126990" name="C Source Files" superClass="io.sloeber.compiler.c.sketch.input"/>
 							</tool>
@@ -65,6 +111,29 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Wire/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Servo/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/CapacitiveSensor}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Ethernet}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Ethernet/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Firmata}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Firmata/utility}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/GSM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/GSM/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Keyboard}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Keyboard/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/LiquidCrystal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/LiquidCrystal/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Mouse}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Mouse/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SD}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SD/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SPI}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Stepper}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/Stepper/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/TFT}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/TFT/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/WiFi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Ampharris/libraries/WiFi/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.S.sketch.input.262667565" name="Assembly source files" superClass="io.sloeber.compiler.S.sketch.input"/>
 							</tool>
