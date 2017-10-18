@@ -6,7 +6,9 @@
 #include <TimerOne.h>
 // pin number of on-board LED
 int ledPin = 13;
-
+boolean servo = false;
+boolean DC1 = false;
+boolean DC2 = false;
 // We initialise the pins we use for PWM, used for the
 // motors. The frequency of the PWM determines the resulting
 // voltage to the motors.
@@ -65,22 +67,24 @@ void setup() {
 /* Repeated code. In here we declare stuff for the control of the ROD, functions might be extended
  * to include better controls, better control over the PWM of the motors, etc.
  */
-void timerInterruptServo() { //Timer Interrupt for the Servos (Used to make ROD drive for a few seconds).
-  servoSpeedLeft = 90;  //We set the servos to stop
-  servoSpeedRight = 90; //We set the servos to stop
-  servoLeft.write(servoSpeedLeft);
-  servoRight.write(servoSpeedRight);
-  Timer1.detachInterrupt(); //We detach the interrupt.
-}
-void timerInterruptDC1() { //Timer Interrupt for the DC motors, used to enable the DC motors for a few seconds.
-  analogWrite(PWM1,0);
-  analogWrite(PWM2,0);
-  Timer1.detachInterrupt(); //We detach the interrupt.
-}
-void timerInterruptDC2() { //Timer Interrupt for the DC motors, used to enable the DC motors for a few seconds.
-  analogWrite(PWM3,0);
-  analogWrite(PWM4,0);
-  Timer1.detachInterrupt(); //We detach the interrupt.
+void timerInterrupt() {
+  if(servo) {
+    servoSpeedLeft = 90;  //We set the servos to stop
+    servoSpeedRight = 90; //We set the servos to stop
+    servoLeft.write(servoSpeedLeft);
+    servoRight.write(servoSpeedRight);
+    servo = false;
+  }
+  if(DC1) {
+    analogWrite(PWM1,0);
+    analogWrite(PWM2,0);
+    DC1 = false;
+  }
+  if(DC2) {
+    analogWrite(PWM3,0);
+    analogWrite(PWM4,0);
+    DC2 = false;
+  }
 }
 void loop() {
   //TODO: Write code for the motors that will open the hatch,
@@ -152,50 +156,58 @@ void loop() {
       case 'p':
           analogWrite(PWM1, 255);
           analogWrite(PWM2, 0);
-          Timer1.attachInterrupt(timerInterruptDC1, 5000000);
+          DC1 = true;
+          Timer1.attachInterrupt(timerInterrupt, 5000000);
           break;
       case 'o':
           analogWrite(PWM1, 0);
           analogWrite(PWM2, 255);
-          Timer1.attachInterrupt(timerInterruptDC1, 5000000);
+          DC1 = true;
+          Timer1.attachInterrupt(timerInterrupt, 5000000);
           break;
       case 'l':
           analogWrite(PWM3, 255);
           analogWrite(PWM4, 0);
-          Timer1.attachInterrupt(timerInterruptDC2, 5000000);
+          DC2 = true;
+          Timer1.attachInterrupt(timerInterrupt, 5000000);
           break;
       case 'k':
           analogWrite(PWM3, 0);
           analogWrite(PWM4, 255);
-          Timer1.attachInterrupt(timerInterruptDC2, 5000000);
+          DC2 = true;
+          Timer1.attachInterrupt(timerInterrupt, 5000000);
           break;
       case 'y': //forward
           servoSpeedLeft = 0;
           servoLeft.write(servoSpeedLeft);
           servoSpeedRight = 0;
           servoRight.write(servoSpeedRight);
-
+          servo = true;
+          Timer1.attachInterrupt(timerInterrupt, 5000000);
           break;
       case 'g': //left
           servoSpeedLeft = 90;
           servoLeft.write(servoSpeedLeft);
           servoSpeedRight = 0;
           servoRight.write(servoSpeedRight);
-          Timer1.attachInterrupt(timerInterruptServo, 5000000);
+          servo = true;
+          Timer1.attachInterrupt(timerInterrupt, 5000000);
           break;
       case 'h': //backwards
           servoSpeedLeft = 180;
           servoLeft.write(servoSpeedLeft);
           servoSpeedRight = 180;
           servoRight.write(servoSpeedRight);
-          Timer1.attachInterrupt(timerInterruptServo, 5000000);
+          servo = true;
+          Timer1.attachInterrupt(timerInterrupt, 5000000);
           break;
       case 'j': //right
           servoSpeedLeft = 0;
           servoLeft.write(servoSpeedLeft);
           servoSpeedRight = 90;
           servoRight.write(servoSpeedRight);
-          Timer1.attachInterrupt(timerInterruptServo, 5000000);
+          servo = true;
+          Timer1.attachInterrupt(timerInterrupt, 5000000);
           break;
     }
   }
