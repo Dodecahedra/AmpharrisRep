@@ -66,15 +66,18 @@ void setup() {
  * to include better controls, better control over the PWM of the motors, etc.
  */
 void timerInterruptServo() { //Timer Interrupt for the Servos (Used to make ROD drive for a few seconds).
-  ServoSpeedLeft = 90;  //We set the servos to stop
-  ServoSpeedRight = 90; //We set the servos to stop
-  ServoLeft.write(servoSpeedLeft);
-  ServoRight.write(servoSpeedRight);
+  servoSpeedLeft = 90;  //We set the servos to stop
+  servoSpeedRight = 90; //We set the servos to stop
+  servoLeft.write(servoSpeedLeft);
+  servoRight.write(servoSpeedRight);
   Timer1.detachInterrupt(); //We detach the interrupt.
 }
-void timerInterruptDC() { //Timer Interrupt for the DC motors, used to enable the DC motors for a few seconds.
+void timerInterruptDC1() { //Timer Interrupt for the DC motors, used to enable the DC motors for a few seconds.
   analogWrite(PWM1,0);
   analogWrite(PWM2,0);
+  Timer1.detachInterrupt(); //We detach the interrupt.
+}
+void timerInterruptDC2() { //Timer Interrupt for the DC motors, used to enable the DC motors for a few seconds.
   analogWrite(PWM3,0);
   analogWrite(PWM4,0);
   Timer1.detachInterrupt(); //We detach the interrupt.
@@ -149,12 +152,51 @@ void loop() {
       case 'p':
           analogWrite(PWM1, 255);
           analogWrite(PWM2, 0);
-          Timer1.attachInterrupt(timerInterruptDC, 5000000);
+          Timer1.attachInterrupt(timerInterruptDC1, 5000000);
           break;
       case 'o':
-        analogWrite(PWM1, 0);
-        analogWrite(PWM2, 255);
-        Timer1.attachInterrupt(timerInterruptDC, 5000000);
+          analogWrite(PWM1, 0);
+          analogWrite(PWM2, 255);
+          Timer1.attachInterrupt(timerInterruptDC1, 5000000);
+          break;
+      case 'l':
+          analogWrite(PWM3, 255);
+          analogWrite(PWM4, 0);
+          Timer1.attachInterrupt(timerInterruptDC2, 5000000);
+          break;
+      case 'k':
+          analogWrite(PWM3, 0);
+          analogWrite(PWM4, 255);
+          Timer1.attachInterrupt(timerInterruptDC2, 5000000);
+          break;
+      case 'y': //forward
+          servoSpeedLeft = 0;
+          servoLeft.write(servoSpeedLeft);
+          servoSpeedRight = 0;
+          servoRight.write(servoSpeedRight);
+
+          break;
+      case 'g': //left
+          servoSpeedLeft = 90;
+          servoLeft.write(servoSpeedLeft);
+          servoSpeedRight = 0;
+          servoRight.write(servoSpeedRight);
+          Timer1.attachInterrupt(timerInterruptServo, 5000000);
+          break;
+      case 'h': //backwards
+          servoSpeedLeft = 180;
+          servoLeft.write(servoSpeedLeft);
+          servoSpeedRight = 180;
+          servoRight.write(servoSpeedRight);
+          Timer1.attachInterrupt(timerInterruptServo, 5000000);
+          break;
+      case 'j': //right
+          servoSpeedLeft = 0;
+          servoLeft.write(servoSpeedLeft);
+          servoSpeedRight = 90;
+          servoRight.write(servoSpeedRight);
+          Timer1.attachInterrupt(timerInterruptServo, 5000000);
+          break;
     }
   }
 }
